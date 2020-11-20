@@ -1,5 +1,3 @@
-from urllib.parse import urlparse
-
 from gevent.monkey import patch_all  # isort:skip
 
 patch_all()  # isort:skip
@@ -8,6 +6,7 @@ import hashlib
 import signal
 from functools import partial
 from typing import Any, Dict, List, Optional
+from urllib.parse import urlparse
 
 import click
 import gevent
